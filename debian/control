@@ -1,0 +1,12 @@
+Source: ros-jazzy-cartesian-limit-adapter
+Section: misc
+Priority: optional
+Maintainer: "Ignacio Gavier" <igavier@laurusag.tech>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-gtest <!nocheck>, ros-jazzy-moveit-core, ros-jazzy-pluginlib, ros-jazzy-rclcpp, ros-jazzy-ros-workspace
+Homepage: https://github.com/LaurusAg/cartesian_limit_adapter
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-cartesian-limit-adapter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, ros-jazzy-moveit-core, ros-jazzy-pluginlib, ros-jazzy-rclcpp, ros-jazzy-ros-workspace
+Description: MoveIt 2 planning response adapter that retimes a planned path (TOPP-RA) so one link stays under a linear speed and a linear acceleration, on top of the joint velocity and acceleration limits.

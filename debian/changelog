@@ -1,0 +1,11 @@
+ros-jazzy-cartesian-limit-adapter (0.1.0-1noble) noble; urgency=high
+
+  * First release.
+  * ``cartesian_limit_adapter/LimitCartesianSpeed`` planning response adapter: TOPP-RA
+    retiming with joint velocity/acceleration limits plus a bound on the linear speed and
+    linear acceleration of one link.
+  * Honors ``MotionPlanRequest.max_cartesian_speed`` and ``cartesian_speed_limited_link``.
+
+ -- "Ignacio Gavier" <igavier@laurusag.tech>  Fri, 13 Nov 2026 03:00:00 -0000
+
+
